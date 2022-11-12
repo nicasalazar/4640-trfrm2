@@ -132,3 +132,9 @@ variable "droplet_count" {
   default = 2
 }
 ```
+### Create a terraform.tfvars file with variables:
+1. Add a variable to set new values
+```bash
+# set the number of droplet to create
+droplet_count = 3
+```
