@@ -145,6 +145,8 @@ terraform plan
 terraform apply
 ```
 
-#### You should then see 3 new droplets created on your Digital Ocean
+#### You should then see 3 new droplets created, a new load balancer and a new VPC on your Digital Ocean
 <img width="1001" alt="Screen Shot 2022-11-11 at 7 21 56 PM" src="https://user-images.githubusercontent.com/60679947/201454207-041ad1f6-fbf8-44f0-90b4-d5bff76c7614.png">
 
+<img width="983" alt="Screen Shot 2022-11-11 at 7 25 39 PM" src="https://user-images.githubusercontent.com/60679947/201454251-6a6c9336-555e-41db-ba75-b824efb17b5f.png">
+<img width="993" alt="Screen Shot 2022-11-11 at 7 26 00 PM" src="https://user-images.githubusercontent.com/60679947/201454254-cb238017-2bf3-408c-b7eb-6027c46544a2.png">
