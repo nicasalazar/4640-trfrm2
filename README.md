@@ -174,3 +174,13 @@ terraform apply
 ```bash
 touch host.digitalocean.yml
 ```
+
+### Connect to the 3 webservers created in the previous steps
+```bash
+ansible -m ping -u root webservers
+```
+
+### Install and Enable Nginx by running the following command
+```bash
+ansible-playbook nginx-setup.yaml
+```
