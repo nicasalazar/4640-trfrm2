@@ -1,5 +1,4 @@
 .env
 /mgmt/do_token
-.terraform
-*.tfstate
-*.tfstate.backup
+/dev/.terraform
+
