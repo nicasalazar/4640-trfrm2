@@ -138,3 +138,13 @@ variable "droplet_count" {
 # set the number of droplet to create
 droplet_count = 3
 ```
+### Validate, Plan and Create the resources using the following commands
+```bash
+terraform validate
+terraform plan
+terraform apply
+```
+
+#### You should then see 3 new droplets created on your Digital Ocean
+<img width="1001" alt="Screen Shot 2022-11-11 at 7 21 56 PM" src="https://user-images.githubusercontent.com/60679947/201454207-041ad1f6-fbf8-44f0-90b4-d5bff76c7614.png">
+
