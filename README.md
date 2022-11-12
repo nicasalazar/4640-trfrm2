@@ -150,3 +150,27 @@ terraform apply
 
 <img width="983" alt="Screen Shot 2022-11-11 at 7 25 39 PM" src="https://user-images.githubusercontent.com/60679947/201454251-6a6c9336-555e-41db-ba75-b824efb17b5f.png">
 <img width="993" alt="Screen Shot 2022-11-11 at 7 26 00 PM" src="https://user-images.githubusercontent.com/60679947/201454254-cb238017-2bf3-408c-b7eb-6027c46544a2.png">
+
+### Using ansible to install nginx, and start the nginx service on your servers
+1. In the mgmt directory create an ansible.cfg, do_token, an nginx_setup.yml file and a inventory directory
+2. In the ngninx_setup.yml file add the following to configure nginx
+```bash
+---
+- name: install and enable nginx
+  hosts: webservers
+  tasks:
+    - name: install nginx
+      package:
+        name: nginx
+        state: present
+    - name: enable and start nginx
+      service:
+        name: nginx
+        enabled: yes
+        state: started
+...
+```
+3. In the inventory directory add the following files 
+```bash
+touch host.digitalocean.yml
+```
